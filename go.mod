@@ -1,4 +1,4 @@
-module github.com/scmhub/ibapi
+module github.com/Purelightme/goibapi
 
 go 1.23
 

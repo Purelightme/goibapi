@@ -235,7 +235,7 @@ func (c *EClient) Connect(host string, port int, clientID int64) error {
 	c.decoder = &EDecoder{wrapper: c.wrapper, serverVersion: c.serverVersion}
 
 	//start Ereader
-	go EReader(c.Ctx, c.scanner, c.decoder, &c.wg)
+	go EReader(c.Ctx, c, c.scanner, c.decoder, &c.wg)
 
 	// start requester
 	go c.request()
